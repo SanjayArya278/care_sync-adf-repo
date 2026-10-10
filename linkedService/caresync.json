@@ -1,0 +1,24 @@
+{
+	"name": "caresync",
+	"properties": {
+		"annotations": [],
+		"type": "PostgreSqlV2",
+		"typeProperties": {
+			"server": "ep-broad-leaf-b537ppzw-pooler.c-7.us-east-2.aws.neon.tech",
+			"port": 5432,
+			"database": "neondb ",
+			"username": "neondb_owner ",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "caresync",
+				"secretVersion": "ca0ec071b5704c47ac93a09ebeb8dd8a"
+			},
+			"sslMode": 2,
+			"authenticationType": "Basic"
+		}
+	}
+}
