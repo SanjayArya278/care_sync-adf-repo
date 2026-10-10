@@ -28,7 +28,7 @@
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": true
+					"firstRowOnly": false
 				}
 			},
 			{
@@ -43,7 +43,7 @@
 				"typeProperties": {
 					"variableName": "start_time",
 					"value": {
-						"value": "@formatDateTime(utcNow(), 'yyyy-MM-dd HH:mm:ss')\r\n",
+						"value": "@formatDateTime(utcNow(), 'yyyy-MM-dd HH:mm:ss')\n",
 						"type": "Expression"
 					}
 				}
