@@ -18,7 +18,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "Select table_id from ctrl.table_config where table_id = '@{pipeline().parameters.table_id}'\n",
+							"value": "Select table_id, source_system from ctrl.table_config where table_id = '@{pipeline().parameters.table_id}'\n",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -28,7 +28,7 @@
 						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					},
-					"firstRowOnly": false
+					"firstRowOnly": true
 				}
 			},
 			{
@@ -114,7 +114,7 @@
 						"parameters": {
 							"container": "landing",
 							"folder": {
-								"value": "@concat(activity('read table details').output.firstRow.source_system, '/', activity('read table details').output.firstRow.table_id, '/', variables('start_time'))\n\n",
+								"value": "@concat(activity('read table details').output.firstRow.source_system, '/', activity('read table details').output.firstRow.table_id, '/', variables('start_time'))\n\n\n",
 								"type": "Expression"
 							}
 						}
