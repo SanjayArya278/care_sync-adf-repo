@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sanjay-arya"
+		},
+		"LS_azuresql_password": {
+			"value": ""
+		},
+		"care_sync_accountKey": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://caresync-keyvaultuse.vault.azure.net/"
+		},
+		"LS_azuresql_properties_typeProperties_server": {
+			"value": "sanjaarya.database.windows.net"
+		},
+		"LS_azuresql_properties_typeProperties_database": {
+			"value": "sanjaysql"
+		},
+		"LS_azuresql_properties_typeProperties_userName": {
+			"value": "sanjayarya"
+		},
+		"care_sync_properties_typeProperties_url": {
+			"value": "https://sanjay270893.dfs.core.windows.net/"
+		},
+		"caresync_properties_typeProperties_server": {
+			"value": "ep-broad-leaf-b537ppzw-pooler.c-7.us-east-2.aws.neon.tech"
+		},
+		"caresync_properties_typeProperties_database": {
+			"value": "neondb "
+		},
+		"caresync_properties_typeProperties_username": {
+			"value": "neondb_owner "
+		}
+	}
+}
